@@ -3,7 +3,7 @@ machine:
     version: oraclejdk8
 dependencies:
  override: 
-    - mvn dependency:resolve -f ../complete/pom.xml
+    - mvn dependency:resolve -f ./complete/pom.xml
 test:
   override:
-    - mvn integration-test -f ../complete/pom.xml
+    - mvn integration-test -f ./complete/pom.xml
